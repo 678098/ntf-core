@@ -329,7 +329,7 @@ ntsa::Error MemoryEncoder::encodeRdata(const bdlbb::Blob& value)
                               value,
                               0,
                               rdataLength);
-        d_current += value.length();
+        d_current += rdataLength;
     }
 
     return ntsa::Error();
